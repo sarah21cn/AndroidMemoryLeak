@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.ys.memoryleak.activity.AnonymousClassLeakActivity;
+import com.ys.memoryleak.activity.HandlerLeakActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_anonymous:
-                goToActivity(AnonymousClassLeakActivity.class);
+                goToActivity(HandlerLeakActivity.class);
                 break;
             default:
                 break;
