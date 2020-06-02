@@ -9,6 +9,7 @@ import android.view.View;
 import com.ys.memoryleak.activity.AnonymousClassLeakActivity;
 import com.ys.memoryleak.activity.HandlerLeakActivity;
 import com.ys.memoryleak.activity.SingletonLeakActivity;
+import com.ys.memoryleak.fragment.PresenterLeakActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_anonymous:
                 goToActivity(AnonymousClassLeakActivity.class);
+                break;
+            case R.id.btn_presenter:
+                goToActivity(PresenterLeakActivity.class);
                 break;
             default:
                 break;

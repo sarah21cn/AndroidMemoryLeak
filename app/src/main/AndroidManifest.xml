@@ -21,6 +21,7 @@
         <activity android:name=".activity.HandlerLeakActivity"/>
         <activity android:name=".activity.SingletonLeakActivity"/>
         <activity android:name=".activity.AnonymousClassLeakActivity"/>
+        <activity android:name=".fragment.PresenterLeakActivity"/>
     </application>
 
 </manifest>

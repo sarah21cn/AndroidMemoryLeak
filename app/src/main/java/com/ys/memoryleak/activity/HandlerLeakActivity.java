@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -31,7 +30,7 @@ public class HandlerLeakActivity extends Activity {
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_anonymous_class_leak);
-    textView = findViewById(R.id.text_view);
+    textView = findViewById(R.id.btn_presenter);
     leak0();
   }
 
