@@ -22,6 +22,7 @@ public class SingletonLeakActivity extends AppCompatActivity {
     Singleton.getInstance(this);
   }
 
+  // 使用Application Context不会出现内存泄漏
   private void noLeak(){
     Singleton.getInstance(MainApp.getAppContext());
   }

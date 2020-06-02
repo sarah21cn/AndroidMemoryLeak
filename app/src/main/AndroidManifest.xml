@@ -20,6 +20,7 @@
 
         <activity android:name=".activity.HandlerLeakActivity"/>
         <activity android:name=".activity.SingletonLeakActivity"/>
+        <activity android:name=".activity.AnonymousClassLeakActivity"/>
     </application>
 
 </manifest>

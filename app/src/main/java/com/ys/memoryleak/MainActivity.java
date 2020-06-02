@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ys.memoryleak.activity.AnonymousClassLeakActivity;
 import com.ys.memoryleak.activity.HandlerLeakActivity;
 import com.ys.memoryleak.activity.SingletonLeakActivity;
 
@@ -21,11 +22,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_anonymous:
+            case R.id.btn_handler:
                 goToActivity(HandlerLeakActivity.class);
                 break;
             case R.id.btn_singleton:
                 goToActivity(SingletonLeakActivity.class);
+                break;
+            case R.id.btn_anonymous:
+                goToActivity(AnonymousClassLeakActivity.class);
                 break;
             default:
                 break;
