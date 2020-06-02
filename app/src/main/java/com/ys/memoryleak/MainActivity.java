@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ys.memoryleak.activity.HandlerLeakActivity;
+import com.ys.memoryleak.activity.SingletonLeakActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_anonymous:
                 goToActivity(HandlerLeakActivity.class);
+                break;
+            case R.id.btn_singleton:
+                goToActivity(SingletonLeakActivity.class);
                 break;
             default:
                 break;

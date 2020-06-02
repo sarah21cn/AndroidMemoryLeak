@@ -90,7 +90,7 @@ public class HandlerLeakActivity extends Activity {
   protected void onStop() {
     super.onStop();
     // 关闭activity的时候清除handler上的message，可以解决内存泄漏的问题
-    solutionForInnerHandler();
+    // solutionForInnerHandler();
   }
 
   private void solutionForInnerHandler(){
